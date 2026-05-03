@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Distortionz Weapons Market</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="shop" class="shop hidden">
+        <div class="shop-header">
+            <div class="header-left">
+                <span class="brand-tag">
+                    <i class="dot"></i>
+                    <span>BLACK MARKET</span>
+                </span>
+                <h1 class="shop-title">Weapons & Ammo</h1>
+                <span class="shop-sub">Cash on the barrelhead. No questions.</span>
+            </div>
+            <div class="header-right">
+                <div class="rep-badge" id="repBadge">
+                    <span class="rep-label" id="repLabel">WALK-IN</span>
+                </div>
+                <div class="rep-progress">
+                    <div class="rep-progress-text" id="repProgressText">0 purchases</div>
+                    <div class="rep-bar">
+                        <div class="rep-bar-fill" id="repBarFill"></div>
+                    </div>
+                </div>
+                <button class="close-btn" id="closeBtn" type="button">×</button>
+            </div>
+        </div>
+
+        <div class="shop-tabs">
+            <button class="tab active" data-tab="weapons">Weapons</button>
+            <button class="tab" data-tab="ammo">Ammo</button>
+        </div>
+
+        <div class="shop-body">
+            <div class="grid" id="weaponsGrid"></div>
+            <div class="grid hidden" id="ammoGrid"></div>
+        </div>
+
+        <div class="shop-footer">
+            <span class="footer-tip">All sales final. Police presence may vary.</span>
+        </div>
+    </div>
+
+    <!-- ─── Persistent rotation countdown widget ────────────────── -->
+    <div id="armsWidget" class="arms-widget hidden">
+        <div class="arms-widget-header">
+            <span class="arms-widget-dot" id="armsWidgetDot"></span>
+            <span class="arms-widget-label" id="armsWidgetLabel">BLACK MARKET</span>
+        </div>
+        <div class="arms-widget-status" id="armsWidgetStatus">DEALER LIVE</div>
+        <div class="arms-widget-timer" id="armsWidgetTimer">--:--:--</div>
+        <div class="arms-widget-sub" id="armsWidgetSub">until relocation</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
