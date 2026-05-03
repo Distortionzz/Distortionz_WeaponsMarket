@@ -47,7 +47,7 @@ Config.Dealer = {
 
         -- Alleys + back streets (Mission Row / South LS)
         { label = 'Strawberry alley',       area = 'Strawberry',     coords = vec4(125.50, -1717.50, 29.30, 138.0) },
-        { label = 'Davis backlot',          area = 'Davis',          coords = vec4(159.18, -1717.53, 28.29, 144.55) },
+        { label = 'Davis backlot',          area = 'Davis',          coords = vec4(82.30, -1957.40, 21.10, 318.0) },
         { label = 'Vespucci side street',   area = 'Vespucci Beach', coords = vec4(-1156.20, -1521.80, 4.40, 35.0) },
 
         -- Grove / Forum drive
@@ -55,7 +55,7 @@ Config.Dealer = {
 
         -- Sandy Shores (rural option)
         { label = 'Sandy gas station',      area = 'Sandy Shores',   coords = vec4(1689.40, 3585.40, 35.60, 28.0) },
-        { label = 'Stab City trailer',      area = 'Stab City',      coords = vec4(1691.55, 3582.58, 34.62, 203.45) },
+        { label = 'Stab City trailer',      area = 'Stab City',      coords = vec4(193.20, 3637.10, 31.40, 240.0) },
 
         -- Paleto / countryside
         { label = 'Paleto auto shop alley', area = 'Paleto Bay',     coords = vec4(105.80, 6620.00, 31.80, 270.0) },
