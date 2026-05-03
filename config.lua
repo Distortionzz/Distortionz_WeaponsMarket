@@ -2,7 +2,7 @@ Config = {}
 
 Config.Script = {
     name    = 'Distortionz Weapons Market',
-    version = '1.0.4',
+    version = '1.0.5',
 }
 
 Config.Debug = false
@@ -20,7 +20,7 @@ Config.VersionCheck = {
     checkOnStart = true,
     url         = 'https://raw.githubusercontent.com/Distortionzz/Distortionz_WeaponsMarket/main/version.json',
 }
-Config.CurrentVersion = '1.0.4'
+Config.CurrentVersion = '1.0.5'
 
 -- ─── Dealer rotation ────────────────────────────────────────────────
 -- The dealer ped relocates every X hours to one of these spots.
@@ -39,26 +39,24 @@ Config.Dealer = {
     -- All are tucked-away spots with cover and roleplay vibes.
     -- Each location has an `area` field used by the rumor system to hint
     -- at the rough neighborhood without giving the exact spot.
+    -- ─── Dealer rotation locations ─────────────────────────────────
+    -- The dealer relocates between these spots every X minutes (set above).
+    -- Only ONE default location is included — add your own to expand the
+    -- rotation pool. Each entry needs:
+    --   label  = friendly name (shown in /findarms_admin)
+    --   area   = used by the rumor system (e.g., "around Davis")
+    --   coords = vec4(x, y, z, heading)
+    --
+    -- Tip: pick tucked-away spots — alleys, warehouse yards, back lots —
+    -- not main streets. The whole vibe is "you have to hunt for it."
     locations = {
-        -- Industrial / warehouse zones
-        { label = 'Cypress Flats yard',     area = 'Cypress Flats',  coords = vec4(819.74, -2156.07, 29.65, 178.0) },
-        { label = 'El Burro container lot', area = 'El Burro Heights', coords = vec4(1135.16, -1838.76, 33.15, 175.0) },
-        { label = 'Cypress trainyard',      area = 'Cypress Flats',  coords = vec4(728.60, -1875.60, 29.20, 270.0) },
+        { label = 'Davis backlot', area = 'Davis', coords = vec4(162.9, -1716.73, 28.29, 162.85) },
 
-        -- Alleys + back streets (Mission Row / South LS)
-        { label = 'Strawberry alley',       area = 'Strawberry',     coords = vec4(125.50, -1717.50, 29.30, 138.0) },
-        { label = 'Davis backlot',          area = 'Davis',          coords = vec4(82.30, -1957.40, 21.10, 318.0) },
-        { label = 'Vespucci side street',   area = 'Vespucci Beach', coords = vec4(-1156.20, -1521.80, 4.40, 35.0) },
-
-        -- Grove / Forum drive
-        { label = 'Forum Drive corner',     area = 'Davis',          coords = vec4(95.40, -1955.60, 21.10, 215.0) },
-
-        -- Sandy Shores (rural option)
-        { label = 'Sandy gas station',      area = 'Sandy Shores',   coords = vec4(1689.40, 3585.40, 35.60, 28.0) },
-        { label = 'Stab City trailer',      area = 'Stab City',      coords = vec4(193.20, 3637.10, 31.40, 240.0) },
-
-        -- Paleto / countryside
-        { label = 'Paleto auto shop alley', area = 'Paleto Bay',     coords = vec4(105.80, 6620.00, 31.80, 270.0) },
+        -- ── Add your own locations below ──
+        -- { label = 'Cypress Flats yard',     area = 'Cypress Flats',    coords = vec4(819.74, -2156.07, 29.65, 178.0) },
+        -- { label = 'El Burro container lot', area = 'El Burro Heights', coords = vec4(1135.16, -1838.76, 33.15, 175.0) },
+        -- { label = 'Sandy gas station',      area = 'Sandy Shores',     coords = vec4(1689.40, 3585.40, 35.60, 28.0) },
+        -- { label = 'Paleto auto shop alley', area = 'Paleto Bay',       coords = vec4(105.80, 6620.00, 31.80, 270.0) },
     },
 }
 

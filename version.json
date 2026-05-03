@@ -1,6 +1,6 @@
 {
-    "version": "1.0.4",
+    "version": "1.0.5",
     "name": "distortionz_weaponsmarket",
     "download": "https://github.com/Distortionzz/Distortionz_WeaponsMarket",
-    "changelog": "v1.0.4 — Added proximity radar: a red 60m radius circle reveals on the player's map when they get within 150m of the current dealer. Lets the rumor system guide players to the area, then their own scouting locks in the spot. Fully configurable in Config.ProximityBlip."
+    "changelog": "v1.0.5 — Trimmed default dealer rotation pool down to a single Davis location. Server owners now get a clean starter location with documented examples in config.lua showing how to add their own spots. Lets each server build a unique rotation map fitting their roleplay style."
 }
