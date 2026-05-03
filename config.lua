@@ -20,7 +20,7 @@ Config.VersionCheck = {
     checkOnStart = true,
     url         = 'https://raw.githubusercontent.com/Distortionzz/Distortionz_WeaponsMarket/main/version.json',
 }
-Config.CurrentVersion = '1.0.0'
+Config.CurrentVersion = '1.0.4'
 
 -- ─── Dealer rotation ────────────────────────────────────────────────
 -- The dealer ped relocates every X hours to one of these spots.
