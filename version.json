@@ -1,6 +1,6 @@
 {
-    "version": "1.0.5",
+    "version": "1.0.7",
     "name": "distortionz_weaponsmarket",
     "download": "https://github.com/Distortionzz/Distortionz_WeaponsMarket",
-    "changelog": "v1.0.5 — Trimmed default dealer rotation pool down to a single Davis location. Server owners now get a clean starter location with documented examples in config.lua showing how to add their own spots. Lets each server build a unique rotation map fitting their roleplay style."
+    "changelog": "v1.0.7 — Added README.md with overview, features, dependencies, installation, and credits. Standardized GitHub repo metadata (badges, dynamic version pull, MIT license, Qbox required). v1.0.6 — Dealer ped is now flagged as protected. The roaming dealer ped now sets Entity(ped).state.distortionz_protected_ped (plus distortionz_contact_ped and distortionz_dealer_ped) on spawn, so distortionz_robped and other ped-aware scripts skip it. v1.0.5 — Previous release."
 }

@@ -2,7 +2,7 @@ Config = {}
 
 Config.Script = {
     name    = 'Distortionz Weapons Market',
-    version = '1.0.5',
+    version = '1.0.7',
 }
 
 Config.Debug = false
@@ -20,7 +20,7 @@ Config.VersionCheck = {
     checkOnStart = true,
     url         = 'https://raw.githubusercontent.com/Distortionzz/Distortionz_WeaponsMarket/main/version.json',
 }
-Config.CurrentVersion = '1.0.5'
+Config.CurrentVersion = '1.0.7'
 
 -- ─── Dealer rotation ────────────────────────────────────────────────
 -- The dealer ped relocates every X hours to one of these spots.

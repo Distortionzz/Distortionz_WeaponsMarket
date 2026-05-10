@@ -74,6 +74,12 @@ local function SpawnDealerAt(location)
     SetPedFleeAttributes(dealerPed, 0, false)
     SetPedDiesWhenInjured(dealerPed, false)
 
+    -- v1.0.6 — Distortionz convention: flag as protected so other scripts
+    -- (distortionz_robped, etc.) skip this ped for player interactions.
+    Entity(dealerPed).state:set('distortionz_protected_ped', true, true)
+    Entity(dealerPed).state:set('distortionz_contact_ped',   true, true)
+    Entity(dealerPed).state:set('distortionz_dealer_ped',    true, true)
+
     if Config.Dealer.scenario then
         TaskStartScenarioInPlace(dealerPed, Config.Dealer.scenario, 0, true)
     end

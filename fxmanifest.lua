@@ -4,7 +4,7 @@ lua54 'yes'
 
 author 'Distortionz'
 description 'Distortionz Weapons Market — roaming black market dealer with tiered weapon unlocks via reputation, mixed cash/dirty money payments, glassy NUI shop, and configurable police alerts.'
-version '1.0.5'
+version '1.0.7'
 repository 'https://github.com/Distortionzz/Distortionz_WeaponsMarket'
 
 ui_page 'html/index.html'
